@@ -2061,7 +2061,7 @@ class _FlutterSliderState extends State<FlutterSlider>
       bottom: bottom,
       child: Opacity(
         opacity: opacity,
-        child: Center(child: tooltipWidget),
+        child: tooltipWidget,
       ),
     );
   }
