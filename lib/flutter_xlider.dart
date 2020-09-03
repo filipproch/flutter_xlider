@@ -2007,13 +2007,9 @@ class _FlutterSliderState extends State<FlutterSlider>
     }
 
     Widget tooltipWidget = IgnorePointer(
-        child: Center(
-      child: FittedBox(
+      child: Center(
         child: Container(
-//            height: ,
-//          height: __tooltipKEY.currentContext.size.height,
           key: (side == 'left') ? leftTooltipKey : rightTooltipKey,
-//            alignment: Alignment.center,
           child: (widget.tooltip != null && widget.tooltip.custom != null)
               ? widget.tooltip.custom(value)
               : Container(
@@ -2024,7 +2020,6 @@ class _FlutterSliderState extends State<FlutterSlider>
                   transform: _tooltipData.boxStyle.transform,
                   child: _tooltipHolderWidget),
         ),
-      ),
     ));
 
     double top, right, bottom, left;
